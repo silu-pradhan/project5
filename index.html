@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>subscribe to our channel</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: urbanist;
+        }
+        body{
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            background-color: black;
+        }
+        h1{
+            text-align: center;
+            color: white;
+            font-weight: bold;
+           font-size: 96px;
+           text-shadow: -1px 2px 3px rgba(136,247,76,0.2);
+           position: relative;
+        }
+        h1::before{
+         content: "SUBSCRIBE...";
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         color: yellow;
+         overflow: hidden;
+         border-right: 2px solid red;
+         animation: text 2s linear infinite;
+
+        } 
+        @keyframes text{
+            0%{
+              width: 0;
+
+            }
+            50%{
+                width: 100%;
+
+            }
+            100%{
+                width: 0;
+            }
+           
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        SUBSCRIBE...
+    </h1>>
+</body>
+</html>
